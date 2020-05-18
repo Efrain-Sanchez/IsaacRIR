@@ -3,47 +3,67 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../CSS/isaac.css" />
-		<script src="../JS/isaac.js"></script>
+		<link rel="stylesheet" href="../CSS/main--page.css" />
 		<title>IsaacRIR</title>
 	</head>
+	<script src="../JS/isaac.js"></script>
+
 	<body>
-		<div class="Top--Line"></div>
-		<!-- BARRA SUPERIOS, MERAMENTE DECORATIVA -->
-		<span class="logo"></span>
-		<!-- LOGO, SE PIENSA AGREGAR POR CSS -->
-		<div class="search">
-			<input
-				type="text"
-				name="searcher"
-				id="search"
-				placeholder="Buscar por categoría, color o lugar"
-			/>
-		</div>
-		<!-- BUSCADOR//SEARCHER -->
-		<div class="menu">
-			<div class="menu__galeria"><p>Galería</p></div>
-			<div class="menu__sobre--mi"><p>Sobre mí</p></div>
-			<div class="menu__proyectos"><p>Proyectos</p></div>
-			<div class="menu__cotacto"><p>Contacto</p></div>
-		</div>
+		<header>
+			<div class="Top--Line"></div>
+			<!-- BARRA SUPERIOS, MERAMENTE DECORATIVA -->
+			<div class="logo">
+				<img class="logo__image" src="../IMG/png/logo_isaac.png" alt="" />
+				<div class="logo__search">
+					<form action="" class="logo__form" id="form">
+						<input
+							type="text"
+							name="name"
+							placeholder="Buscar por color, lugar o categoría..."
+						/>
+					</form>
+				</div>
+			</div>
+			<!-- LOGO, SE PIENSA AGREGAR POR CSS -->
+			<!-- BUSCADOR//SEARCHER -->
+			<div class="menu">
+				<div class="menu__galeria"><p>Galería</p></div>
+				<div class="menu__sobre--mi"><p>Sobre mí</p></div>
+				<div class="menu__proyectos"><p>Proyectos</p></div>
+				<div class="menu__contacto"><p>Contacto</p></div>
+			</div>
+		</header>
 		<!-- MENU -->
 		<section class="main--grid--galery">
-			<div class="main--grid--galery__first"></div>
-			<div class="main--grid--galery__second"></div>
-			<div class="main--grid--galery__third"></div>
+			<div class="main--grid--galery__first">
+				<img src="../IMG/experimento.jpeg" alt="" />
+			</div>
+			<div class="main--grid--galery__second">
+				<img src="../IMG/interior.jpeg" alt="" />
+			</div>
+			<div class="main--grid--galery__third">
+				<img src="../IMG/pug.jpeg" alt="" />
+			</div>
 		</section>
 		<!-- GALERIA -->
 		<footer>
 			<div class="social--media">
-				<span class="social--media__facebook"></span>
-				<span class="social--media__youtube"></span>
-				<span class="social--media__instagram"></span>
-				<span class="social--media__twitter"></span>
+				<span class="social--media__facebook"
+					><img src="../IMG/png/facebook.png" alt=""
+				/></span>
+				<span class="social--media__youtube"
+					><img src="../IMG/png/youtube.png" alt=""
+				/></span>
+				<span class="social--media__instagram"
+					><img src="../IMG/png/instagram.png" alt=""
+				/></span>
+				<span class="social--media__twitter"
+					><img src="../IMG/png/twitter.png" alt=""
+				/></span>
 			</div>
 			<!-- SOCIAL MEDIA SIDE -->
 			<div class="contact--form">
-				<p>Stay alert for notifications</p>
+				<p class="contact--form__alert">Stay alert for notifications</p>
 				<input
 					type="email"
 					name="email"
@@ -51,9 +71,11 @@
 					placeholder="Type in your email address"
 				/>
 				<button type="submit">SUBMIT</button>
+				<p class="contact--form__developer">
+					Website developed by Efrain Sanchez
+				</p>
 			</div>
 			<!-- CONTACT FORM -->
-			<p class="developer">Website developed by Efrain Sanchez</p>
 		</footer>
 		<!-- TERMINA CON FOOTER -->
 	</body>
