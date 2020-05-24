@@ -1,0 +1,51 @@
+.menu {
+	background-color: $main-color;
+	// container
+	display: grid;
+	grid-template-areas:
+		"Galeria "
+		"SobreMi"
+		"Proyectos"
+		"Contacto";
+	justify-content: center;
+	&__galeria {
+		width: 12em;
+		text-align: center;
+		grid-area: Galeria;
+		&__link {
+			text-decoration: none;
+			color: white;
+			font-size: $font-size-2;
+			font-family: $font-text;
+			letter-spacing: 1px;
+		}
+	}
+	div:hover {
+		opacity: 50%;
+		border-bottom: solid 2px $sombra;
+	}
+	&__sobre--mi {
+		width: 100%;
+		text-align: center;
+		grid-area: SobreMi;
+		a {
+			@extend .menu__galeria__link;
+		}
+	}
+	&__proyectos {
+		width: 100%;
+		text-align: center;
+		grid-area: Proyectos;
+		a {
+			@extend .menu__galeria__link;
+		}
+	}
+	&__contacto {
+		width: 100%;
+		text-align: center;
+		grid-area: Contacto;
+		a {
+			@extend .menu__galeria__link;
+		}
+	}
+}
