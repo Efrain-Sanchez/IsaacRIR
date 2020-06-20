@@ -6,3 +6,30 @@
 
 // queries
 @import "componentes/600px.scss";
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	z-index: 0;
+	left: 0;
+	background: rgba(150, 150, 150, 50%);
+}
+.modal {
+	width: 600px;
+	height: 600px;
+	background: rgb(200, 200, 200);
+	border-radius: 3em;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	display: flex;
+	img {
+		width: 80%;
+		height: 80%;
+	}
+}
