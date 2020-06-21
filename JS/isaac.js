@@ -1,13 +1,19 @@
-// const imgs = document.getElementsByClassName("galery--imgs");
+console.log("Hola");
+const img1 = {
+	ruta: "../IMG/experimento.jpeg",
+	tituloDeImagen: "EXPERIMENTO",
+	descripcion: "Preaparacion de Xanteno, colorante Eosina en Laboratorio",
+};
+const callGenerator = generador(img1);
 
-// function template(img) {
-// 	return;
-// 	`
-//    <div class="overlay">
-//          <div class="modal" id="modal">
-//             <img src="${img}" alt="" />
-//          </div>
-//       </div>
-//    `;
-// }
-const logo = document.getElementById("logo");
+function generador(objeto) {
+	const img = $("#img").setAttribute("src", `${objeto.ruta}`);
+	const p = $("#p");
+	const h1 = $("#h1");
+	h1.textContent = `${objeto.tituloDeImagen}`;
+	p.textContent = `${objeto.descripcion}`;
+}
+
+function $(selector) {
+	return document.querySelector(selector);
+}
