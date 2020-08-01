@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 body {
+  height: 100vh;
+  background: #f2f2f2f2;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -92,6 +94,14 @@ header .logo__search .logo__form input, header .logo__search .logo__form footer 
   grid-row-gap: 20px;
   justify-items: stretch;
 }
+.main--grid--galery .hoverUno {
+  grid-area: imgUno;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+}
 .main--grid--galery__first, .main--grid--galery__sixth, .main--grid--galery__fifth, .main--grid--galery__fourth, .main--grid--galery__third, .main--grid--galery__second {
   width: 100%;
   height: auto;
@@ -108,6 +118,14 @@ header .logo__search .logo__form input, header .logo__search .logo__form footer 
 .main--grid--galery__first img :hover, .main--grid--galery__sixth img :hover, .main--grid--galery__fifth img :hover, .main--grid--galery__fourth img :hover, .main--grid--galery__third img :hover, .main--grid--galery__second img :hover {
   opacity: 50%;
 }
+.main--grid--galery .hoverDos {
+  grid-area: imgDos;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+}
 .main--grid--galery__second {
   grid-area: imgDos;
 }
@@ -119,6 +137,14 @@ header .logo__search .logo__form input, header .logo__search .logo__form footer 
 }
 .main--grid--galery__second img :hover {
   opacity: 50%;
+}
+.main--grid--galery .hoverTres {
+  grid-area: imgTres;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
 }
 .main--grid--galery__third {
   grid-area: imgTres;
@@ -132,6 +158,14 @@ header .logo__search .logo__form input, header .logo__search .logo__form footer 
 .main--grid--galery__third img :hover {
   opacity: 50%;
 }
+.main--grid--galery .hoverCuatro {
+  grid-area: imgCuatro;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+}
 .main--grid--galery__fourth {
   grid-area: imgCuatro;
 }
@@ -144,6 +178,14 @@ header .logo__search .logo__form input, header .logo__search .logo__form footer 
 .main--grid--galery__fourth img :hover {
   opacity: 50%;
 }
+.main--grid--galery .hoverCinco {
+  grid-area: imgCinco;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+}
 .main--grid--galery__fifth {
   grid-area: imgCinco;
 }
@@ -155,6 +197,14 @@ header .logo__search .logo__form input, header .logo__search .logo__form footer 
 }
 .main--grid--galery__fifth img :hover {
   opacity: 50%;
+}
+.main--grid--galery .hoverSeis {
+  grid-area: imgSeis;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
 }
 .main--grid--galery__sixth {
   grid-area: imgSeis;
@@ -601,32 +651,59 @@ footer .contact--form__developer {
     font-size: 1.08em;
   }
 }
-.overlay {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 0;
-  left: 0;
-  background: rgba(150, 150, 150, 0.5);
+#show {
+  background-color: brown;
 }
 
 .modal {
-  width: 600px;
-  height: 600px;
-  background: #c8c8c8;
-  border-radius: 3em;
+  z-index: 2;
   position: absolute;
-  z-index: 1;
-  text-align: center;
-  display: flex;
+  left: 30%;
+  top: 30%;
+  right: 30%;
+  bottom: 30%;
+  max-width: 40%;
+  height: 700px;
+  padding: 25px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  display: none;
+  grid-template-rows: 25px 1fr 1fr 1fr;
+  grid-template-columns: 1fr 25px;
+  grid-gap: 10px;
+  -webkit-box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.35);
+  box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.35);
 }
-.modal img {
-  width: 80%;
-  height: 80%;
+.modal #close {
+  width: 25px;
+  height: auto;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.modal #close:hover {
+  transform: rotate(45deg);
+}
+.modal #img {
+  width: 100%;
+  height: auto;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.modal h1 {
+  font-family: tahoma;
+  font-size: 25px;
+  text-align: center;
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+.modal p {
+  font-family: tahoma;
+  font-size: 15px;
+  text-align: center;
+  grid-row: 4/5;
+  grid-column: 1/3;
 }
 
 /*# sourceMappingURL=main--page.css.map */

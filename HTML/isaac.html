@@ -44,21 +44,27 @@
 		</div>
 		<!-- MENU -->
 		<section class="main--grid--galery" id="galery">
+			<img class="hoverUno" src="../IMG/png/add.png" alt="" />
 			<div class="main--grid--galery__first" onclick="setDisplay(modal)">
 				<img class="galery--imgs" src="../IMG/experimento.jpeg" alt="" />
 			</div>
+			<img class="hoverDos" src="../IMG/png/add.png" alt="" />
 			<div class="main--grid--galery__second">
 				<img class="galery--imgs" src="../IMG/interior.jpeg" alt="" />
 			</div>
+			<img class="hoverTres" src="../IMG/png/add.png" alt="" />
 			<div class="main--grid--galery__third">
 				<img class="galery--imgs" src="../IMG/girasol.jpeg" alt="" />
 			</div>
+			<img class="hoverCuatro" src="../IMG/png/add.png" alt="" />
 			<div class="main--grid--galery__fourth">
 				<img class="galery--imgs" src="../IMG/globo.jpeg" alt="" />
 			</div>
+			<img class="hoverCinco" src="../IMG/png/add.png" alt="" />
 			<div class="main--grid--galery__fifth">
 				<img class="galery--imgs" src="../IMG/lago.jpeg" alt="" />
 			</div>
+			<img class="hoverSeis" src="../IMG/png/add.png" alt="" />
 			<div class="main--grid--galery__sixth">
 				<img class="galery--imgs" src="../IMG/libro.jpeg" alt="" />
 			</div>
@@ -97,51 +103,18 @@
 		</footer>
 		<!-- TERMINA CON FOOTER -->
 		<!-- 888888888888888888888888888 -->
-		<div class="galery" id="modal">
-			<img id="img" src="" alt="" onclick="setOutDisplay(modal)" />
+		<div class="modal" id="modal">
+			<img id="img" src="" alt="" />
 			<h1 id="h1"></h1>
 			<p id="p"></p>
+			<img
+				id="close"
+				src="../IMG/png/add.png"
+				alt=""
+				onclick="setOutDisplay(modal)"
+			/>
 		</div>
 		<!-- 888888888888888888888888888 -->
 	</body>
-	<style>
-		#show {
-			background-color: brown;
-		}
-		.galery {
-			z-index: 2;
-			position: absolute;
-			top: 50px;
-			right: 500px;
-			margin: auto;
-			max-width: 500px;
-			max-height: 500px;
-			padding: 20px;
-			background: #f5f5f5f5;
-			display: none;
-			grid-template-rows: 1fr 40px 100px;
-			grid-gap: 10px;
-		}
-		.galery img {
-			width: 100%;
-			height: auto;
-			grid-column: 1/2;
-			grid-row: 1/2;
-		}
-		.galery h1 {
-			background-color: aliceblue;
-			font-family: tahoma;
-			font-size: 25px;
-			text-align: center;
-			grid-row: 2/3;
-		}
-		.galery p {
-			background-color: aliceblue;
-			font-family: tahoma;
-			font-size: 15px;
-			text-align: center;
-			grid-row: 3/4;
-		}
-	</style>
 	<script src="../JS/isaac.js"></script>
 </html>

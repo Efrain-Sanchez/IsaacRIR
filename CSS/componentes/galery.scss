@@ -13,6 +13,14 @@
 
 	grid-row-gap: 20px;
 	justify-items: stretch;
+	.hoverUno {
+		grid-area: imgUno;
+		background: white;
+		width: 50px;
+		height: 50px;
+		margin: auto;
+		text-align: center;
+	}
 	&__first {
 		width: 100%;
 		height: auto;
@@ -29,6 +37,14 @@
 			}
 		}
 	}
+	.hoverDos {
+		grid-area: imgDos;
+		background: white;
+		width: 50px;
+		height: 50px;
+		margin: auto;
+		text-align: center;
+	}
 	&__second {
 		@extend .main--grid--galery__first;
 		grid-area: imgDos;
@@ -41,6 +57,14 @@
 				opacity: 50%;
 			}
 		}
+	}
+	.hoverTres {
+		grid-area: imgTres;
+		background: white;
+		width: 50px;
+		height: 50px;
+		margin: auto;
+		text-align: center;
 	}
 	&__third {
 		@extend .main--grid--galery__first;
@@ -55,6 +79,14 @@
 			}
 		}
 	}
+	.hoverCuatro {
+		grid-area: imgCuatro;
+		background: white;
+		width: 50px;
+		height: 50px;
+		margin: auto;
+		text-align: center;
+	}
 	&__fourth {
 		@extend .main--grid--galery__first;
 		grid-area: imgCuatro;
@@ -68,6 +100,14 @@
 			}
 		}
 	}
+	.hoverCinco {
+		grid-area: imgCinco;
+		background: white;
+		width: 50px;
+		height: 50px;
+		margin: auto;
+		text-align: center;
+	}
 	&__fifth {
 		@extend .main--grid--galery__first;
 		grid-area: imgCinco;
@@ -80,6 +120,14 @@
 				opacity: 50%;
 			}
 		}
+	}
+	.hoverSeis {
+		grid-area: imgSeis;
+		background: white;
+		width: 50px;
+		height: 50px;
+		margin: auto;
+		text-align: center;
 	}
 	&__sixth {
 		@extend .main--grid--galery__first;
