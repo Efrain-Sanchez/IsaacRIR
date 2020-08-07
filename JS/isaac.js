@@ -18,8 +18,8 @@ const objectArray = [
 		id: 3,
 	}),
 	(img4 = {
-		ruta: ".../IMG/cloud.jpeg",
-		tituloDeImagen: "Cielo nublado",
+		ruta: "../IMG/globo.jpeg",
+		tituloDeImagen: "Universal Studios",
 		descripcion: "Lorem ipsum dolor ed itsen itum",
 		id: 4,
 	}),
@@ -30,14 +30,14 @@ const objectArray = [
 		id: 5,
 	}),
 	(img6 = {
-		ruta: "../IMG/city.jpeg",
-		tituloDeImagen: "Panoramic city",
+		ruta: "../IMG/libro.jpeg",
+		tituloDeImagen: "Book and beach",
 		descripcion: "lorem ipsum dolor et itum",
 		id: 1,
 	}),
 ];
 
-const callGenerator = generador(objectArray[0]);
+// const callGenerator = generador(objectArray[1]);
 const modal = $("#modal");
 const firstImg = $("#show");
 
@@ -51,12 +51,27 @@ function generador(objeto) {
 	p.textContent = `${objeto.descripcion}`;
 }
 
-function $(selector) {
-	return document.querySelector(selector);
-}
 function setDisplay(objetoModal) {
 	objetoModal.style.display = "grid";
 }
 function setOutDisplay(objetoModal) {
 	objetoModal.style.display = "none";
+}
+const image = () => {
+	const view = `
+		<div class="contenedor">
+			<img src="ruta" alt="">
+		</div>
+	`;
+	return view;
+};
+
+const galery = $(".galery");
+for (i = 0; i < objectArray.length; i++) {
+	console.log(i);
+}
+galery.innerHTML = image();
+
+function $(selector) {
+	return document.querySelector(selector);
 }

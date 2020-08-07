@@ -10,7 +10,7 @@
 	<body>
 		<header>
 			<div class="Top--Line"></div>
-			<!-- BARRA SUPERIOS, MERAMENTE DECORATIVA -->
+			<!-- BARRA SUPERIOR, MERAMENTE DECORATIVA -->
 			<div class="logo" id="logo">
 				<img class="logo__image" src="../IMG/png/logo_isaac.png" alt="" />
 				<div class="logo__search">
@@ -28,9 +28,7 @@
 		</header>
 		<div class="menu">
 			<div class="menu__galeria">
-				<a class="menu__galeria__link" href="Galeria.html" target="_blank"
-					>Galería</a
-				>
+				<a class="menu__galeria__link" href="Galeria.html">Galería</a>
 			</div>
 			<div class="menu__sobre--mi">
 				<a href="Sobre_mi.html" target="_blank">Sobre mí</a>
@@ -45,27 +43,45 @@
 		<!-- MENU -->
 		<section class="main--grid--galery" id="galery">
 			<img class="hoverUno" src="../IMG/png/add.png" alt="" />
-			<div class="main--grid--galery__first" onclick="setDisplay(modal)">
+			<div
+				class="main--grid--galery__first"
+				onclick="generador(objectArray[0]) , setDisplay(modal)"
+			>
 				<img class="galery--imgs" src="../IMG/experimento.jpeg" alt="" />
 			</div>
 			<img class="hoverDos" src="../IMG/png/add.png" alt="" />
-			<div class="main--grid--galery__second">
+			<div
+				class="main--grid--galery__second"
+				onclick="generador(objectArray[1]) , setDisplay(modal)"
+			>
 				<img class="galery--imgs" src="../IMG/interior.jpeg" alt="" />
 			</div>
 			<img class="hoverTres" src="../IMG/png/add.png" alt="" />
-			<div class="main--grid--galery__third">
+			<div
+				class="main--grid--galery__third"
+				onclick="generador(objectArray[2]) , setDisplay(modal)"
+			>
 				<img class="galery--imgs" src="../IMG/girasol.jpeg" alt="" />
 			</div>
 			<img class="hoverCuatro" src="../IMG/png/add.png" alt="" />
-			<div class="main--grid--galery__fourth">
+			<div
+				class="main--grid--galery__fourth"
+				onclick="generador(objectArray[3]) , setDisplay(modal)"
+			>
 				<img class="galery--imgs" src="../IMG/globo.jpeg" alt="" />
 			</div>
 			<img class="hoverCinco" src="../IMG/png/add.png" alt="" />
-			<div class="main--grid--galery__fifth">
-				<img class="galery--imgs" src="../IMG/lago.jpeg" alt="" />
+			<div
+				class="main--grid--galery__fifth"
+				onclick="generador(objectArray[4]) , setDisplay(modal)"
+			>
+				<img class="galery--imgs" src="../IMG/pug.jpeg" alt="" />
 			</div>
 			<img class="hoverSeis" src="../IMG/png/add.png" alt="" />
-			<div class="main--grid--galery__sixth">
+			<div
+				class="main--grid--galery__sixth"
+				onclick="generador(objectArray[5]) , setDisplay(modal)"
+			>
 				<img class="galery--imgs" src="../IMG/libro.jpeg" alt="" />
 			</div>
 		</section>

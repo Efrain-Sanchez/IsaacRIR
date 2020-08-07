@@ -1,0 +1,22 @@
+{
+	"name": "isaacrir",
+	"version": "1.0.0",
+	"description": "PORTFOLIO PRACTICE ",
+	"main": "index.js",
+	"scripts": {
+		"javascript": "node JS/isaac.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Efrain-Sanchez/Fotograph-portfolio-.git"
+	},
+	"keywords": [
+		"eventListener"
+	],
+	"author": "Efrain Sanchez",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Efrain-Sanchez/Fotograph-portfolio-/issues"
+	},
+	"homepage": "https://github.com/Efrain-Sanchez/Fotograph-portfolio-#readme"
+}
