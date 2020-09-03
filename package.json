@@ -2,7 +2,7 @@
 	"name": "isaacrir",
 	"version": "1.0.0",
 	"description": "PORTFOLIO PRACTICE ",
-	"main": "index.js",
+	"main": "isaac.js",
 	"scripts": {
 		"javascript": "node JS/isaac.js"
 	},
