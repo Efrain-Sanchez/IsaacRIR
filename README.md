@@ -5,3 +5,5 @@ First part of this projest consists on developing the interface (responsive) of 
 The real challege for me would be the *shearch bar* Since we are working with photos, I'm looking 
 to make it work by filtring by: Predominant colors, places and/or category. 
 Now, 16/05/2020. I don't really know how I will achieve it. Im using HTML5, CSS3 (SASS), JS.
+
+>-https://efrain-sanchez.github.io/IsaacRIR/HTML/isaac.html
