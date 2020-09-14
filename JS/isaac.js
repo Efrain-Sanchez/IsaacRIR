@@ -57,20 +57,6 @@ function setDisplay(objetoModal) {
 function setOutDisplay(objetoModal) {
 	objetoModal.style.display = "none";
 }
-const image = () => {
-	const view = `
-		<div class="contenedor">
-			<img src="ruta" alt="">
-		</div>
-	`;
-	return view;
-};
-
-const galery = $(".galery");
-for (i = 0; i < objectArray.length; i++) {
-	console.log(i);
-}
-galery.innerHTML = image();
 
 function $(selector) {
 	return document.querySelector(selector);
