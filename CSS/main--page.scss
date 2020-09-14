@@ -7,22 +7,24 @@
 
 // queries
 @import "componentes/600px.scss";
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
 	.modal {
 		z-index: 2;
-		position: absolute;
-		left: 8%;
-		top: 24%;
-		right: 15%;
+		position: fixed;
+		left: 22%;
+		top: 28%;
+		// right: 15%;
 		/* bottom: 31%; */
-		width: 70%;
-		height: 700px;
+		width: 90%;
+
+		max-height: 350px;
+		overflow-y: scroll;
 		padding: 25px;
 		background: white;
 		border: 1px solid white;
 		border-radius: 15px;
 		display: none;
-		grid-template-rows: 25px 1fr 1fr 1fr;
+		grid-template-rows: 25px auto auto 1fr;
 		grid-template-columns: 1fr 25px;
 		grid-gap: 10px;
 
@@ -46,7 +48,7 @@
 		}
 		h1 {
 			font-family: tahoma;
-			font-size: 25px;
+			font-size: 17px;
 			text-align: center;
 			grid-row: 3/4;
 			grid-column: 1/3;

@@ -1,12 +1,13 @@
 .modal {
 	z-index: 2;
-	position: absolute;
+	position: fixed;
+	overflow-y: scroll;
 	left: 30%;
-	top: 30%;
+	top: 4%;
 	right: 30%;
 	bottom: 30%;
 	max-width: 40%;
-	height: 700px;
+	height: 85vh;
 	padding: 25px;
 	background: white;
 	border: 1px solid white;

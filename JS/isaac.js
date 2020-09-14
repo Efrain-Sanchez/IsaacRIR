@@ -2,7 +2,8 @@ const objectArray = [
 	(img1 = {
 		ruta: "../IMG/experimento.jpeg",
 		tituloDeImagen: "EXPERIMENTO",
-		descripcion: "Preaparacion de Xanteno, colorante Eosina en Laboratorio",
+		descripcion:
+			"Preaparacion de Xanteno, para tincion H&E de Histología. Colorante Eosina en Laboratorio",
 		id: 1,
 	}),
 	(img2 = {
