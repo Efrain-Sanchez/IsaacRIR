@@ -40,6 +40,7 @@ const objectArray = [
 
 // const callGenerator = generador(objectArray[1]);
 const modal = $("#modal");
+const modalBackground = $('#modalBackground')
 const firstImg = $("#show");
 
 // firstImg.addEventListener("", setDisplay(modal));
@@ -53,9 +54,11 @@ function generador(objeto) {
 }
 
 function setDisplay(objetoModal) {
+	modalBackground.style.display = "block";
 	objetoModal.style.display = "grid";
 }
 function setOutDisplay(objetoModal) {
+	modalBackground.style.display = "none";
 	objetoModal.style.display = "none";
 }
 
