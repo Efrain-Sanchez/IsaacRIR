@@ -4,12 +4,8 @@
 	margin: 20px 0px;
 	display: grid;
 	grid-template-areas:
-		".		imgUno	."
-		".		imgDos	."
-		".		imgTres	."
-		".		imgCuatro	."
-		".		imgCinco	 	."
-		".		imgSeis 	 	.";
+		"imgUno			imgDos		imgTres	"
+		"imgCuatro		imgCinco	imgSeis";
 
 	grid-row-gap: 20px;
 	justify-items: stretch;

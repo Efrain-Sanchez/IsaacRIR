@@ -1,8 +1,30 @@
 header{
     width: 100vw;
-    height: 25vh;
-
-
-    border: solid red ;
-
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    .logo {
+        width: 33vw;
+        height: auto;
+        margin: 5px;
+        &__image {
+            width: 100%;
+        }
+    }   
+}
+@media screen and (max-width: 1024px) {
+    header {
+        align-items: center;
+        .logo{
+            width: 66vw;
+        }
+    }
+}
+@media screen and (max-width: 360px)  {
+    header {
+        height: 10vh;
+        .logo {
+            width: 80%;
+        }
+    }
 }

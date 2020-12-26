@@ -1,51 +1,98 @@
 .menu {
 	background-color: $main-color;
+	height: 60px;
+	padding: 5px 25%; 
 	// container
-	display: grid;
-	grid-template-areas:
-		"Galeria "
-		"SobreMi"
-		"Proyectos"
-		"Contacto";
+	display: flex;
 	justify-content: center;
 	&__galeria {
-		width: 12em;
-		text-align: center;
-		grid-area: Galeria;
+		margin: 10px 20px;
 		&__link {
 			text-decoration: none;
 			color: white;
-			font-size: $font-size-2;
+			font-size: $font-size-2 + 3;
 			font-family: $font-text;
-			letter-spacing: 1px;
+			letter-spacing: 1.5px;
 		}
+	}
+	div{
+		padding: 0px 5px;
 	}
 	div:hover {
 		opacity: 50%;
-		border-bottom: solid 2px $sombra;
+		border-bottom: solid 3px $sombra;
 	}
 	&__sobre--mi {
-		width: 100%;
-		text-align: center;
-		grid-area: SobreMi;
-		a {
-			@extend .menu__galeria__link;
-		}
-	}
-	&__proyectos {
-		width: 100%;
-		text-align: center;
-		grid-area: Proyectos;
+		@extend .menu__galeria;
 		a {
 			@extend .menu__galeria__link;
 		}
 	}
 	&__contacto {
-		width: 100%;
-		text-align: center;
-		grid-area: Contacto;
+		@extend .menu__galeria;
 		a {
 			@extend .menu__galeria__link;
+		}
+	}
+}
+
+@media screen and (min-width: 320px) {
+	.menu {
+		background-color: $main-color;
+		height: 40px;
+		padding: 5px; 
+		&__galeria {
+			margin: 10px 10px;
+		}
+	}
+}
+
+@media screen and (min-width: 360px)  {
+	.menu {
+		background-color: $main-color;
+		height: 40px;
+		padding: 5px; 
+		&__galeria {
+			margin: 10px 15px;
+		}
+	}
+} 
+@media screen and (min-width: 411px) {
+	.menu {
+		background-color: $main-color;
+		height: 40px;
+		padding: 5px; 
+		&__galeria {
+			margin: 10px 15px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.menu {
+		background-color:$main-color;
+		height: 40px;
+		padding: 5px; 
+		&__galeria {
+			margin: 10px 20px;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.menu {
+		background-color: $main-color;
+		height: 40px;
+		padding: 5px 10%; 
+		&__galeria {
+			margin: 10px 40px;
+			&__link {
+				text-decoration: none;
+				color: white;
+				font-size: $font-size-2 + 3;
+				font-family: $font-text;
+				letter-spacing: 1.5px;
+			}
 		}
 	}
 }
