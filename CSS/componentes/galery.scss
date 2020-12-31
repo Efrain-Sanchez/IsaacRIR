@@ -1,141 +1,113 @@
-.main--grid--galery {
-	width: 100%;
-	height: auto;
-	margin: 20px 0px;
-	display: grid;
-	grid-template-areas:
-		"imgUno			imgDos		imgTres	"
-		"imgCuatro		imgCinco	imgSeis";
 
-	grid-row-gap: 20px;
+.main--grid--galery {
+	width: 100vw;
+	height: auto;
+	margin: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-gap: 60px 20px;
 	justify-items: stretch;
-	.hoverUno {
-		grid-area: imgUno;
-		background: white;
-		width: 50px;
-		height: 50px;
-		margin: auto;
-		text-align: center;
-	}
+
 	&__first {
-		width: 100%;
-		height: auto;
-		margin: auto;
-		text-align: center;
-		grid-area: imgUno;
-		img {
-			width: 200px;
-			align-self: center;
-			height: 200px;
-			align-self: center;
-			:hover {
-				opacity: 50%;
-			}
+		grid-column:1 / 2;
+		grid-row: 1 / 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.hoverUno {
+			width: 10%;
+			grid-column: 1 / 2;
+			grid-row: 1 / 2;
+			position: absolute;
+			opacity: 50%;
+			&:hover{
+				opacity: 75%;
+			}	
 		}
-	}
-	.hoverDos {
-		grid-area: imgDos;
-		background: white;
-		width: 50px;
-		height: 50px;
-		margin: auto;
-		text-align: center;
+
+		.galery--imgs{
+			width: 90%;
+			height: 407px;
+		}
 	}
 	&__second {
 		@extend .main--grid--galery__first;
-		grid-area: imgDos;
-		img {
-			width: 200px;
-			align-self: center;
-			height: 200px;
-			align-self: center;
-			:hover {
-				opacity: 50%;
+		grid-column: 2 / 3;
+
+		.hoverDos {
+			width: 10%;
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+			position: absolute;
+			opacity: 50%;
+			&:hover{
+				opacity: 75%;
 			}
 		}
-	}
-	.hoverTres {
-		grid-area: imgTres;
-		background: white;
-		width: 50px;
-		height: 50px;
-		margin: auto;
-		text-align: center;
 	}
 	&__third {
 		@extend .main--grid--galery__first;
-		grid-area: imgTres;
-		img {
-			width: 200px;
-			align-self: center;
-			height: 200px;
-			align-self: center;
-			:hover {
-				opacity: 50%;
+		grid-column: 3 / 4 ;
+
+		.hoverTres {
+			width: 10%;
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+			position: absolute;
+			opacity: 50%;
+			&:hover{
+				opacity: 75%;
 			}
 		}
-	}
-	.hoverCuatro {
-		grid-area: imgCuatro;
-		background: white;
-		width: 50px;
-		height: 50px;
-		margin: auto;
-		text-align: center;
 	}
 	&__fourth {
 		@extend .main--grid--galery__first;
-		grid-area: imgCuatro;
-		img {
-			width: 200px;
-			align-self: center;
-			height: 200px;
-			align-self: center;
-			:hover {
-				opacity: 50%;
+		grid-row: 2 / 3 ;
+
+		.hoverCuatro {
+			width: 10%;
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+			position: absolute;
+			opacity: 50%;
+			&:hover{
+				opacity: 75%;
 			}
 		}
-	}
-	.hoverCinco {
-		grid-area: imgCinco;
-		background: white;
-		width: 50px;
-		height: 50px;
-		margin: auto;
-		text-align: center;
+
 	}
 	&__fifth {
 		@extend .main--grid--galery__first;
-		grid-area: imgCinco;
-		img {
-			width: 200px;
-			align-self: center;
-			height: 200px;
-			align-self: center;
-			:hover {
-				opacity: 50%;
+		grid-row: 2 / 3 ;
+		grid-column: 2 / 3;
+
+		.hoverCinco {
+			width: 10%;
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+			position: absolute;
+			opacity: 50%;
+			&:hover{
+				opacity: 75%;
 			}
 		}
 	}
-	.hoverSeis {
-		grid-area: imgSeis;
-		background: white;
-		width: 50px;
-		height: 50px;
-		margin: auto;
-		text-align: center;
-	}
 	&__sixth {
 		@extend .main--grid--galery__first;
-		grid-area: imgSeis;
-		img {
-			width: 200px;
-			align-self: center;
-			height: 200px;
-			align-self: center;
+		grid-row: 2 / 3 ;
+		grid-column: 3 / 4;
+
+		.hoverSeis {
+			width: 10%;
+			grid-column: 3 / 4;
+			grid-row: 2 / 3;
+			position: absolute;
+			opacity: 50%;
+			
+			&:hover{
+			opacity: 75%;
+			}
 		}
-	}
-	.galery--imgs:hover {
-		opacity: 50%;
 	}
 }
