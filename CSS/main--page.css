@@ -126,14 +126,14 @@ header .logo__image {
 .main--grid--galery {
   width: 100vw;
   height: auto;
-  margin: 20px;
+  margin: 20px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-gap: 60px 20px;
-  justify-items: stretch;
+  grid-gap: 60px 10px;
 }
 .main--grid--galery__first, .main--grid--galery__sixth, .main--grid--galery__fifth, .main--grid--galery__fourth, .main--grid--galery__third, .main--grid--galery__second {
+  width: 90%;
+  margin: auto;
   grid-column: 1/2;
   grid-row: 1/2;
   display: flex;
