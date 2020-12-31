@@ -394,7 +394,7 @@ footer .contact--form__developer {
     background-color: #0a0a2a;
     height: 30px;
     display: grid;
-    grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+    grid-template-areas: "Galeria SobreMi  Contacto";
     grid-gap: 30px;
     justify-content: center;
     align-items: center;
@@ -419,11 +419,6 @@ footer .contact--form__developer {
     width: 5em;
     text-align: center;
     grid-area: SobreMi;
-  }
-  .menu__proyectos {
-    width: 5em;
-    text-align: center;
-    grid-area: Proyectos;
   }
   .menu__contacto {
     width: 5em;
@@ -466,7 +461,7 @@ footer .contact--form__developer {
     background-color: #0a0a2a;
     height: 40px;
     display: grid;
-    grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+    grid-template-areas: "Galeria SobreMi Contacto";
     grid-gap: 40px;
     justify-content: center;
     align-items: center;
@@ -491,11 +486,6 @@ footer .contact--form__developer {
     width: 7em;
     text-align: center;
     grid-area: SobreMi;
-  }
-  .menu__proyectos {
-    width: 7em;
-    text-align: center;
-    grid-area: Proyectos;
   }
   .menu__contacto {
     width: 7em;
@@ -543,7 +533,7 @@ footer .contact--form__developer {
     background-color: #0a0a2a;
     height: 50px;
     display: grid;
-    grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+    grid-template-areas: "Galeria SobreMi Contacto";
     grid-gap: 50px;
     justify-content: center;
     align-items: center;
@@ -568,11 +558,6 @@ footer .contact--form__developer {
     width: 8.75em;
     text-align: center;
     grid-area: SobreMi;
-  }
-  .menu__proyectos {
-    width: 8.75em;
-    text-align: center;
-    grid-area: Proyectos;
   }
   .menu__contacto {
     width: 8.75em;
@@ -621,7 +606,7 @@ footer .contact--form__developer {
     background-color: #0a0a2a;
     height: 72px;
     display: grid;
-    grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+    grid-template-areas: "Galeria SobreMi Contacto";
     grid-gap: 72px;
     justify-content: center;
     align-items: center;
@@ -646,11 +631,6 @@ footer .contact--form__developer {
     width: 12.6em;
     text-align: center;
     grid-area: SobreMi;
-  }
-  .menu__proyectos {
-    width: 12.6em;
-    text-align: center;
-    grid-area: Proyectos;
   }
   .menu__contacto {
     width: 12.6em;

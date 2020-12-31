@@ -16,7 +16,7 @@
 		height: 30px;
 		// container
 		display: grid;
-		grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+		grid-template-areas: "Galeria SobreMi  Contacto";
 		grid-gap: 30px;
 		justify-content: center;
 		align-items: center;
@@ -40,11 +40,6 @@
 			width: 5em;
 			text-align: center;
 			grid-area: SobreMi;
-		}
-		&__proyectos {
-			width: 5em;
-			text-align: center;
-			grid-area: Proyectos;
 		}
 		&__contacto {
 			width: 5em;
@@ -94,7 +89,7 @@
 		height: 40px;
 		// container
 		display: grid;
-		grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+		grid-template-areas: "Galeria SobreMi Contacto";
 		grid-gap: 40px;
 		justify-content: center;
 		align-items: center;
@@ -118,11 +113,6 @@
 			width: 7em;
 			text-align: center;
 			grid-area: SobreMi;
-		}
-		&__proyectos {
-			width: 7em;
-			text-align: center;
-			grid-area: Proyectos;
 		}
 		&__contacto {
 			width: 7em;
@@ -176,7 +166,7 @@
 		height: 50px;
 		// container
 		display: grid;
-		grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+		grid-template-areas: "Galeria SobreMi Contacto";
 		grid-gap: 50px;
 		justify-content: center;
 		align-items: center;
@@ -200,11 +190,6 @@
 			width: 8.75em;
 			text-align: center;
 			grid-area: SobreMi;
-		}
-		&__proyectos {
-			width: 8.75em;
-			text-align: center;
-			grid-area: Proyectos;
 		}
 		&__contacto {
 			width: 8.75em;
@@ -256,7 +241,7 @@
 		height: 72px;
 		// container
 		display: grid;
-		grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+		grid-template-areas: "Galeria SobreMi Contacto";
 		grid-gap: 72px;
 		justify-content: center;
 		align-items: center;
@@ -280,11 +265,6 @@
 			width: 12.6em;
 			text-align: center;
 			grid-area: SobreMi;
-		}
-		&__proyectos {
-			width: 12.6em;
-			text-align: center;
-			grid-area: Proyectos;
 		}
 		&__contacto {
 			width: 12.6em;
