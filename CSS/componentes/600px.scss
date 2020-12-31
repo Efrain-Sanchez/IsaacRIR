@@ -1,0 +1,339 @@
+@media screen and (min-width: 600px) {
+	.logo {
+		width: 420px;
+		&__search {
+			height: 30px;
+			.logo__form {
+				height: 100%;
+				input {
+					height: 25px;
+				}
+			}
+		}
+	}
+	.menu {
+		background-color: $main-color;
+		height: 30px;
+		// container
+		display: grid;
+		grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+		grid-gap: 30px;
+		justify-content: center;
+		align-items: center;
+		&__galeria {
+			width: 5em;
+			text-align: center;
+			grid-area: Galeria;
+			&__link {
+				text-decoration: none;
+				color: white;
+				font-size: $font-size-2;
+				font-family: $font-text;
+				letter-spacing: 1px;
+			}
+		}
+		div:hover {
+			opacity: 50%;
+			border-bottom: solid 2px $sombra;
+		}
+		&__sobre--mi {
+			width: 5em;
+			text-align: center;
+			grid-area: SobreMi;
+		}
+		&__proyectos {
+			width: 5em;
+			text-align: center;
+			grid-area: Proyectos;
+		}
+		&__contacto {
+			width: 5em;
+			text-align: center;
+			grid-area: Contacto;
+		}
+	}
+
+	.main--grid--galery {
+		width: 100%;
+		height: auto;
+		margin: 20px 0px;
+		display: grid;
+		grid-template-areas:
+			"	imgUno      imgDos"
+			"	imgTres     imgCuatro"
+			"	imgCinco    imgSeis";
+
+		grid-gap: 20px;
+		justify-items: stretch;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	header {
+		width: 100%;
+		height: 217px;
+		display: grid;
+		grid-template-rows: 27px 1fr;
+		grid-template-columns: 1fr 3fr 1fr;
+		.logo {
+			width: 560px;
+			&__search {
+				height: 10px;
+				.logo__form {
+					height: 100%;
+					input {
+						height: 35px;
+					}
+				}
+			}
+		}
+	}
+
+	.menu {
+		background-color: $main-color;
+		height: 40px;
+		// container
+		display: grid;
+		grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+		grid-gap: 40px;
+		justify-content: center;
+		align-items: center;
+		&__galeria {
+			width: 7em;
+			text-align: center;
+			grid-area: Galeria;
+			&__link {
+				text-decoration: none;
+				color: white;
+				font-size: $font-size-2;
+				font-family: $font-text;
+				letter-spacing: 1px;
+			}
+		}
+		div:hover {
+			opacity: 50%;
+			border-bottom: solid 2px $sombra;
+		}
+		&__sobre--mi {
+			width: 7em;
+			text-align: center;
+			grid-area: SobreMi;
+		}
+		&__proyectos {
+			width: 7em;
+			text-align: center;
+			grid-area: Proyectos;
+		}
+		&__contacto {
+			width: 7em;
+			text-align: center;
+			grid-area: Contacto;
+		}
+	}
+
+	.main--grid--galery {
+		width: 100%;
+		height: auto;
+		margin: 25px 0px;
+		display: grid;
+		grid-template-areas:
+			"	imgUno      imgDos		imgTres "
+			"	imgCuatro	imgCinco		imgSeis";
+
+		grid-column-gap: 10px;
+		grid-row-gap: 25px;
+		justify-items: stretch;
+	}
+	.contact--form {
+		p {
+			font-size: 1.2em;
+		}
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	header {
+		width: 100%;
+		height: 271px;
+		display: grid;
+		grid-template-rows: 34px 1fr;
+		grid-template-columns: 1fr 3fr 1fr;
+		.logo {
+			width: 700px;
+			&__search {
+				height: 12.5px;
+				.logo__form {
+					height: 100%;
+					input {
+						height: 43px;
+					}
+				}
+			}
+		}
+	}
+	.menu {
+		background-color: $main-color;
+		height: 50px;
+		// container
+		display: grid;
+		grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+		grid-gap: 50px;
+		justify-content: center;
+		align-items: center;
+		&__galeria {
+			width: 8.75em;
+			text-align: center;
+			grid-area: Galeria;
+			&__link {
+				text-decoration: none;
+				color: white;
+				font-size: $font-size-2 + 4;
+				font-family: $font-text;
+				letter-spacing: 1.25px;
+			}
+		}
+		div:hover {
+			opacity: 50%;
+			border-bottom: solid 2.5px $sombra;
+		}
+		&__sobre--mi {
+			width: 8.75em;
+			text-align: center;
+			grid-area: SobreMi;
+		}
+		&__proyectos {
+			width: 8.75em;
+			text-align: center;
+			grid-area: Proyectos;
+		}
+		&__contacto {
+			width: 8.75em;
+			text-align: center;
+			grid-area: Contacto;
+		}
+	}
+	.main--grid--galery {
+		width: 100%;
+		height: auto;
+		margin: 31.25px 0px;
+		display: grid;
+		grid-template-areas:
+			"	imgUno      imgDos		imgTres "
+			"	imgCuatro	imgCinco		imgSeis";
+
+		grid-column-gap: 12.5px;
+		grid-row-gap: 31.25px;
+		justify-items: stretch;
+	}
+	.main--grid--galery img {
+		width: 250px;
+		height: 250px;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	header {
+		width: 100%;
+		height: 390px;
+		display: grid;
+		grid-template-rows: 49px 1fr;
+		grid-template-columns: 1fr 3fr 1fr;
+		.logo {
+			width: 1010px;
+			&__search {
+				height: 18px;
+				.logo__form {
+					height: 100%;
+					input {
+						height: 62px;
+					}
+				}
+			}
+		}
+	}
+	.menu {
+		background-color: $main-color;
+		height: 72px;
+		// container
+		display: grid;
+		grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+		grid-gap: 72px;
+		justify-content: center;
+		align-items: center;
+		&__galeria {
+			width: 12.6em;
+			text-align: center;
+			grid-area: Galeria;
+			&__link {
+				text-decoration: none;
+				color: white;
+				font-size: $font-size-2 + 12;
+				font-family: $font-text;
+				letter-spacing: 1.8px;
+			}
+		}
+		div:hover {
+			opacity: 50%;
+			border-bottom: solid 3.6px $sombra;
+		}
+		&__sobre--mi {
+			width: 12.6em;
+			text-align: center;
+			grid-area: SobreMi;
+		}
+		&__proyectos {
+			width: 12.6em;
+			text-align: center;
+			grid-area: Proyectos;
+		}
+		&__contacto {
+			width: 12.6em;
+			text-align: center;
+			grid-area: Contacto;
+		}
+	}
+	.main--grid--galery {
+		width: 100%;
+		height: auto;
+		margin: 45px 0px;
+		display: grid;
+		grid-template-areas:
+			"	imgUno      imgDos		imgTres "
+			"	imgCuatro	imgCinco		imgSeis";
+
+		grid-column-gap: 18px;
+		grid-row-gap: 45px;
+		justify-items: stretch;
+	}
+	.main--grid--galery img {
+		width: 360px;
+		height: 360px;
+	}
+	footer {
+		height: auto;
+		.social--media {
+			grid-column-gap: 58px;
+			grid-row-gap: 15px;
+			&__facebook {
+				width: 36px;
+				height: 36px;
+			}
+		}
+		.contact--form {
+			row-gap: 15px;
+			grid-template-rows: 15px 22px 22px 15px;
+			&__alert {
+				height: 15px;
+			}
+			input {
+				height: 22px;
+				padding: 2.88px;
+				font-family: $font-text;
+				font-size: $font-size-1 + 7;
+			}
+			&__developer {
+				font-size: 1.08em;
+			}
+		}
+	}
+}

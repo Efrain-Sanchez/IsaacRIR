@@ -9,9 +9,19 @@
 
 	<body>
 		<header>
+			<div class="Top--Line"></div>
 			<!-- BARRA SUPERIOR, MERAMENTE DECORATIVA -->
 			<div class="logo" id="logo">
 				<img class="logo__image" src="../IMG/png/logo_isaac.png" alt="" />
+				<div class="logo__search">
+					<form action="" class="logo__form" id="form">
+						<input
+							type="text"
+							name="name"
+							placeholder="Buscar por color, lugar o categoría..."
+						/>
+					</form>
+				</div>
 			</div>
 			<!-- LOGO, SE PIENSA AGREGAR POR CSS -->
 			<!-- BUSCADOR//SEARCHER -->
@@ -30,47 +40,46 @@
 		</div>
 		<!-- MENU -->
 		<section class="main--grid--galery" id="galery">
+			<img class="hoverUno" src="../IMG/png/add.png" alt="" />
 			<div
-			class="main--grid--galery__first"
-			onclick="generador(objectArray[0]) , setDisplay(modal)"
+				class="main--grid--galery__first"
+				onclick="generador(objectArray[0]) , setDisplay(modal)"
 			>
-				<img class="hoverUno" src="../IMG/png/add.png" alt="" />
 				<img class="galery--imgs" src="../IMG/experimento.jpeg" alt="" />
 			</div>
+			<img class="hoverDos" src="../IMG/png/add.png" alt="" />
 			<div
-			class="main--grid--galery__second"
-			onclick="generador(objectArray[1]) , setDisplay(modal)"
+				class="main--grid--galery__second"
+				onclick="generador(objectArray[1]) , setDisplay(modal)"
 			>
 				<img class="galery--imgs" src="../IMG/interior.jpeg" alt="" />
-				<img class="hoverDos" src="../IMG/png/add.png" alt="" />
 			</div>
+			<img class="hoverTres" src="../IMG/png/add.png" alt="" />
 			<div
-			class="main--grid--galery__third"
-			onclick="generador(objectArray[2]) , setDisplay(modal)"
+				class="main--grid--galery__third"
+				onclick="generador(objectArray[2]) , setDisplay(modal)"
 			>
 				<img class="galery--imgs" src="../IMG/girasol.jpeg" alt="" />
-				<img class="hoverTres" src="../IMG/png/add.png" alt="" />
 			</div>
+			<img class="hoverCuatro" src="../IMG/png/add.png" alt="" />
 			<div
-			class="main--grid--galery__fourth"
-			onclick="generador(objectArray[3]) , setDisplay(modal)"
+				class="main--grid--galery__fourth"
+				onclick="generador(objectArray[3]) , setDisplay(modal)"
 			>
-				<img class="hoverCuatro" src="../IMG/png/add.png" alt="" />
 				<img class="galery--imgs" src="../IMG/globo.jpeg" alt="" />
 			</div>
-		
+			<img class="hoverCinco" src="../IMG/png/add.png" alt="" />
 			<div
-			class="main--grid--galery__fifth"
-			onclick="generador(objectArray[4]) , setDisplay(modal)"
+				class="main--grid--galery__fifth"
+				onclick="generador(objectArray[4]) , setDisplay(modal)"
 			>
-				<img class="hoverCinco" src="../IMG/png/add.png" alt="" />
 				<img class="galery--imgs" src="../IMG/pug.jpeg" alt="" />
 			</div>
+			<img class="hoverSeis" src="../IMG/png/add.png" alt="" />
 			<div
-			class="main--grid--galery__sixth"
-			onclick="generador(objectArray[5]) , setDisplay(modal)"
+				class="main--grid--galery__sixth"
+				onclick="generador(objectArray[5]) , setDisplay(modal)"
 			>
-				<img class="hoverSeis" src="../IMG/png/add.png" alt="" />
 				<img class="galery--imgs" src="../IMG/libro.jpeg" alt="" />
 			</div>
 		</section>

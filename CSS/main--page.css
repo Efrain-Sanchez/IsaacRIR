@@ -12,214 +12,211 @@ body {
 }
 
 header {
-  width: 100vw;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 20px 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+header .Top--Line {
+  background-color: #0a0a2a;
+  grid-row: 1/2;
+  grid-column: 1/4;
 }
 header .logo {
-  width: 33vw;
-  height: auto;
-  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
 header .logo__image {
+  width: 80%;
+  margin: 5px auto;
+}
+header .logo__search {
+  width: 90%;
+  margin: 5px auto;
+}
+header .logo__search .logo__form input, header .logo__search .logo__form footer .contact--form button, footer .contact--form header .logo__search .logo__form button {
   width: 100%;
+  padding: 1px 5px;
+  border: solid 1px rgba(5, 21, 16, 0.5);
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgba(5, 21, 16, 0.5);
 }
 
-@media screen and (max-width: 1024px) {
-  header {
-    align-items: center;
-  }
-  header .logo {
-    width: 66vw;
-  }
-}
-@media screen and (max-width: 360px) {
-  header {
-    height: 10vh;
-  }
-  header .logo {
-    width: 80%;
-  }
-}
 .menu {
   background-color: #0a0a2a;
-  height: 60px;
-  padding: 5px 25%;
-  display: flex;
+  display: grid;
+  grid-template-areas: "Galeria " "SobreMi" "Proyectos" "Contacto";
   justify-content: center;
 }
-.menu__galeria, .menu__contacto, .menu__sobre--mi {
-  margin: 10px 20px;
+.menu__galeria {
+  width: 12em;
+  text-align: center;
+  grid-area: Galeria;
 }
-.menu__galeria__link, .menu__contacto a, .menu__sobre--mi a {
+.menu__galeria__link, .menu__contacto a, .menu__proyectos a, .menu__sobre--mi a {
   text-decoration: none;
   color: white;
-  font-size: 19px;
+  font-size: 16px;
   font-family: "Lato";
-  letter-spacing: 1.5px;
-}
-.menu div {
-  padding: 0px 5px;
+  letter-spacing: 1px;
 }
 .menu div:hover {
   opacity: 50%;
-  border-bottom: solid 3px rgba(255, 255, 255, 0.1);
+  border-bottom: solid 2px rgba(255, 255, 255, 0.1);
 }
-@media screen and (min-width: 320px) {
-  .menu {
-    background-color: #0a0a2a;
-    height: 40px;
-    padding: 5px;
-  }
-  .menu__galeria, .menu__sobre--mi, .menu__contacto {
-    margin: 10px 10px;
-  }
+.menu__sobre--mi {
+  width: 100%;
+  text-align: center;
+  grid-area: SobreMi;
 }
-@media screen and (min-width: 360px) {
-  .menu {
-    background-color: #0a0a2a;
-    height: 40px;
-    padding: 5px;
-  }
-  .menu__galeria, .menu__sobre--mi, .menu__contacto {
-    margin: 10px 15px;
-  }
+.menu__proyectos {
+  width: 100%;
+  text-align: center;
+  grid-area: Proyectos;
 }
-@media screen and (min-width: 411px) {
-  .menu {
-    background-color: #0a0a2a;
-    height: 40px;
-    padding: 5px;
-  }
-  .menu__galeria, .menu__sobre--mi, .menu__contacto {
-    margin: 10px 15px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu {
-    background-color: #0a0a2a;
-    height: 40px;
-    padding: 5px;
-  }
-  .menu__galeria, .menu__sobre--mi, .menu__contacto {
-    margin: 10px 20px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .menu {
-    background-color: #0a0a2a;
-    height: 40px;
-    padding: 5px 10%;
-  }
-  .menu__galeria, .menu__sobre--mi, .menu__contacto {
-    margin: 10px 40px;
-  }
-  .menu__galeria__link, .menu__sobre--mi a, .menu__contacto a {
-    text-decoration: none;
-    color: white;
-    font-size: 19px;
-    font-family: "Lato";
-    letter-spacing: 1.5px;
-  }
+.menu__contacto {
+  width: 100%;
+  text-align: center;
+  grid-area: Contacto;
 }
 .main--grid--galery {
-  width: 100vw;
+  width: 100%;
   height: auto;
-  margin: 20px 0;
+  margin: 20px 0px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 60px 10px;
+  grid-template-areas: ".		imgUno	." ".		imgDos	." ".		imgTres	." ".		imgCuatro	." ".		imgCinco	 	." ".		imgSeis 	 	.";
+  grid-row-gap: 20px;
+  justify-items: stretch;
+}
+.main--grid--galery .hoverUno {
+  grid-area: imgUno;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
 }
 .main--grid--galery__first, .main--grid--galery__sixth, .main--grid--galery__fifth, .main--grid--galery__fourth, .main--grid--galery__third, .main--grid--galery__second {
-  width: 90%;
+  width: 100%;
+  height: auto;
   margin: auto;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  grid-area: imgUno;
 }
-.main--grid--galery__first .hoverUno, .main--grid--galery__sixth .hoverUno, .main--grid--galery__fifth .hoverUno, .main--grid--galery__fourth .hoverUno, .main--grid--galery__third .hoverUno, .main--grid--galery__second .hoverUno {
-  width: 10%;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  position: absolute;
+.main--grid--galery__first img, .main--grid--galery__sixth img, .main--grid--galery__fifth img, .main--grid--galery__fourth img, .main--grid--galery__third img, .main--grid--galery__second img {
+  width: 200px;
+  align-self: center;
+  height: 200px;
+  align-self: center;
+}
+.main--grid--galery__first img :hover, .main--grid--galery__sixth img :hover, .main--grid--galery__fifth img :hover, .main--grid--galery__fourth img :hover, .main--grid--galery__third img :hover, .main--grid--galery__second img :hover {
   opacity: 50%;
 }
-.main--grid--galery__first .hoverUno:hover, .main--grid--galery__sixth .hoverUno:hover, .main--grid--galery__fifth .hoverUno:hover, .main--grid--galery__fourth .hoverUno:hover, .main--grid--galery__third .hoverUno:hover, .main--grid--galery__second .hoverUno:hover {
-  opacity: 75%;
-}
-.main--grid--galery__first .galery--imgs, .main--grid--galery__sixth .galery--imgs, .main--grid--galery__fifth .galery--imgs, .main--grid--galery__fourth .galery--imgs, .main--grid--galery__third .galery--imgs, .main--grid--galery__second .galery--imgs {
-  width: 90%;
-  height: 407px;
+.main--grid--galery .hoverDos {
+  grid-area: imgDos;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
 }
 .main--grid--galery__second {
-  grid-column: 2/3;
+  grid-area: imgDos;
 }
-.main--grid--galery__second .hoverDos {
-  width: 10%;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  position: absolute;
+.main--grid--galery__second img {
+  width: 200px;
+  align-self: center;
+  height: 200px;
+  align-self: center;
+}
+.main--grid--galery__second img :hover {
   opacity: 50%;
 }
-.main--grid--galery__second .hoverDos:hover {
-  opacity: 75%;
+.main--grid--galery .hoverTres {
+  grid-area: imgTres;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
 }
 .main--grid--galery__third {
-  grid-column: 3/4;
+  grid-area: imgTres;
 }
-.main--grid--galery__third .hoverTres {
-  width: 10%;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  position: absolute;
+.main--grid--galery__third img {
+  width: 200px;
+  align-self: center;
+  height: 200px;
+  align-self: center;
+}
+.main--grid--galery__third img :hover {
   opacity: 50%;
 }
-.main--grid--galery__third .hoverTres:hover {
-  opacity: 75%;
+.main--grid--galery .hoverCuatro {
+  grid-area: imgCuatro;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
 }
 .main--grid--galery__fourth {
-  grid-row: 2/3;
+  grid-area: imgCuatro;
 }
-.main--grid--galery__fourth .hoverCuatro {
-  width: 10%;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  position: absolute;
+.main--grid--galery__fourth img {
+  width: 200px;
+  align-self: center;
+  height: 200px;
+  align-self: center;
+}
+.main--grid--galery__fourth img :hover {
   opacity: 50%;
 }
-.main--grid--galery__fourth .hoverCuatro:hover {
-  opacity: 75%;
+.main--grid--galery .hoverCinco {
+  grid-area: imgCinco;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
 }
 .main--grid--galery__fifth {
-  grid-row: 2/3;
-  grid-column: 2/3;
+  grid-area: imgCinco;
 }
-.main--grid--galery__fifth .hoverCinco {
-  width: 10%;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  position: absolute;
+.main--grid--galery__fifth img {
+  width: 200px;
+  align-self: center;
+  height: 200px;
+  align-self: center;
+}
+.main--grid--galery__fifth img :hover {
   opacity: 50%;
 }
-.main--grid--galery__fifth .hoverCinco:hover {
-  opacity: 75%;
+.main--grid--galery .hoverSeis {
+  grid-area: imgSeis;
+  background: white;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
 }
 .main--grid--galery__sixth {
-  grid-row: 2/3;
-  grid-column: 3/4;
+  grid-area: imgSeis;
 }
-.main--grid--galery__sixth .hoverSeis {
-  width: 10%;
-  grid-column: 3/4;
-  grid-row: 2/3;
-  position: absolute;
+.main--grid--galery__sixth img {
+  width: 200px;
+  align-self: center;
+  height: 200px;
+  align-self: center;
+}
+.main--grid--galery .galery--imgs:hover {
   opacity: 50%;
-}
-.main--grid--galery__sixth .hoverSeis:hover {
-  opacity: 75%;
 }
 
 footer {
@@ -390,6 +387,385 @@ footer .contact--form__developer {
   text-align: center;
   grid-row: 4/5;
   grid-column: 1/3;
+}
+
+@media screen and (min-width: 600px) {
+  .logo {
+    width: 420px;
+  }
+  .logo__search {
+    height: 30px;
+  }
+  .logo__search .logo__form {
+    height: 100%;
+  }
+  .logo__search .logo__form input, .logo__search .logo__form footer .contact--form button, footer .contact--form .logo__search .logo__form button {
+    height: 25px;
+  }
+
+  .menu {
+    background-color: #0a0a2a;
+    height: 30px;
+    display: grid;
+    grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__galeria {
+    width: 5em;
+    text-align: center;
+    grid-area: Galeria;
+  }
+  .menu__galeria__link, .menu__sobre--mi a, .menu__proyectos a, .menu__contacto a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Lato";
+    letter-spacing: 1px;
+  }
+  .menu div:hover {
+    opacity: 50%;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.1);
+  }
+  .menu__sobre--mi {
+    width: 5em;
+    text-align: center;
+    grid-area: SobreMi;
+  }
+  .menu__proyectos {
+    width: 5em;
+    text-align: center;
+    grid-area: Proyectos;
+  }
+  .menu__contacto {
+    width: 5em;
+    text-align: center;
+    grid-area: Contacto;
+  }
+
+  .main--grid--galery {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    display: grid;
+    grid-template-areas: "	imgUno      imgDos" "	imgTres     imgCuatro" "	imgCinco    imgSeis";
+    grid-gap: 20px;
+    justify-items: stretch;
+  }
+}
+@media screen and (min-width: 800px) {
+  header {
+    width: 100%;
+    height: 217px;
+    display: grid;
+    grid-template-rows: 27px 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  header .logo {
+    width: 560px;
+  }
+  header .logo__search {
+    height: 10px;
+  }
+  header .logo__search .logo__form {
+    height: 100%;
+  }
+  header .logo__search .logo__form input, header .logo__search .logo__form footer .contact--form button, footer .contact--form header .logo__search .logo__form button {
+    height: 35px;
+  }
+
+  .menu {
+    background-color: #0a0a2a;
+    height: 40px;
+    display: grid;
+    grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+    grid-gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__galeria {
+    width: 7em;
+    text-align: center;
+    grid-area: Galeria;
+  }
+  .menu__galeria__link, .menu__sobre--mi a, .menu__proyectos a, .menu__contacto a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Lato";
+    letter-spacing: 1px;
+  }
+  .menu div:hover {
+    opacity: 50%;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.1);
+  }
+  .menu__sobre--mi {
+    width: 7em;
+    text-align: center;
+    grid-area: SobreMi;
+  }
+  .menu__proyectos {
+    width: 7em;
+    text-align: center;
+    grid-area: Proyectos;
+  }
+  .menu__contacto {
+    width: 7em;
+    text-align: center;
+    grid-area: Contacto;
+  }
+
+  .main--grid--galery {
+    width: 100%;
+    height: auto;
+    margin: 25px 0px;
+    display: grid;
+    grid-template-areas: "	imgUno      imgDos		imgTres " "	imgCuatro	imgCinco		imgSeis";
+    grid-column-gap: 10px;
+    grid-row-gap: 25px;
+    justify-items: stretch;
+  }
+
+  .contact--form p {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header {
+    width: 100%;
+    height: 271px;
+    display: grid;
+    grid-template-rows: 34px 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  header .logo {
+    width: 700px;
+  }
+  header .logo__search {
+    height: 12.5px;
+  }
+  header .logo__search .logo__form {
+    height: 100%;
+  }
+  header .logo__search .logo__form input, header .logo__search .logo__form footer .contact--form button, footer .contact--form header .logo__search .logo__form button {
+    height: 43px;
+  }
+
+  .menu {
+    background-color: #0a0a2a;
+    height: 50px;
+    display: grid;
+    grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__galeria {
+    width: 8.75em;
+    text-align: center;
+    grid-area: Galeria;
+  }
+  .menu__galeria__link, .menu__sobre--mi a, .menu__proyectos a, .menu__contacto a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Lato";
+    letter-spacing: 1.25px;
+  }
+  .menu div:hover {
+    opacity: 50%;
+    border-bottom: solid 2.5px rgba(255, 255, 255, 0.1);
+  }
+  .menu__sobre--mi {
+    width: 8.75em;
+    text-align: center;
+    grid-area: SobreMi;
+  }
+  .menu__proyectos {
+    width: 8.75em;
+    text-align: center;
+    grid-area: Proyectos;
+  }
+  .menu__contacto {
+    width: 8.75em;
+    text-align: center;
+    grid-area: Contacto;
+  }
+
+  .main--grid--galery {
+    width: 100%;
+    height: auto;
+    margin: 31.25px 0px;
+    display: grid;
+    grid-template-areas: "	imgUno      imgDos		imgTres " "	imgCuatro	imgCinco		imgSeis";
+    grid-column-gap: 12.5px;
+    grid-row-gap: 31.25px;
+    justify-items: stretch;
+  }
+
+  .main--grid--galery img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header {
+    width: 100%;
+    height: 390px;
+    display: grid;
+    grid-template-rows: 49px 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  header .logo {
+    width: 1010px;
+  }
+  header .logo__search {
+    height: 18px;
+  }
+  header .logo__search .logo__form {
+    height: 100%;
+  }
+  header .logo__search .logo__form input, header .logo__search .logo__form footer .contact--form button, footer .contact--form header .logo__search .logo__form button {
+    height: 62px;
+  }
+
+  .menu {
+    background-color: #0a0a2a;
+    height: 72px;
+    display: grid;
+    grid-template-areas: "Galeria SobreMi Proyectos Contacto";
+    grid-gap: 72px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__galeria {
+    width: 12.6em;
+    text-align: center;
+    grid-area: Galeria;
+  }
+  .menu__galeria__link, .menu__sobre--mi a, .menu__proyectos a, .menu__contacto a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-family: "Lato";
+    letter-spacing: 1.8px;
+  }
+  .menu div:hover {
+    opacity: 50%;
+    border-bottom: solid 3.6px rgba(255, 255, 255, 0.1);
+  }
+  .menu__sobre--mi {
+    width: 12.6em;
+    text-align: center;
+    grid-area: SobreMi;
+  }
+  .menu__proyectos {
+    width: 12.6em;
+    text-align: center;
+    grid-area: Proyectos;
+  }
+  .menu__contacto {
+    width: 12.6em;
+    text-align: center;
+    grid-area: Contacto;
+  }
+
+  .main--grid--galery {
+    width: 100%;
+    height: auto;
+    margin: 45px 0px;
+    display: grid;
+    grid-template-areas: "	imgUno      imgDos		imgTres " "	imgCuatro	imgCinco		imgSeis";
+    grid-column-gap: 18px;
+    grid-row-gap: 45px;
+    justify-items: stretch;
+  }
+
+  .main--grid--galery img {
+    width: 360px;
+    height: 360px;
+  }
+
+  footer {
+    height: auto;
+  }
+  footer .social--media {
+    grid-column-gap: 58px;
+    grid-row-gap: 15px;
+  }
+  footer .social--media__facebook, footer .social--media__youtube, footer .social--media__instagram, footer .social--media__twitter {
+    width: 36px;
+    height: 36px;
+  }
+  footer .contact--form {
+    row-gap: 15px;
+    grid-template-rows: 15px 22px 22px 15px;
+  }
+  footer .contact--form__alert, footer .contact--form__developer {
+    height: 15px;
+  }
+  footer .contact--form input, footer .contact--form button {
+    height: 22px;
+    padding: 2.88px;
+    font-family: "Lato";
+    font-size: 17px;
+  }
+  footer .contact--form__developer {
+    font-size: 1.08em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .modal {
+    z-index: 2;
+    position: fixed;
+    left: 22%;
+    top: 28%;
+    /* bottom: 31%; */
+    width: 90%;
+    max-height: 350px;
+    overflow-y: scroll;
+    padding: 25px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: none;
+    grid-template-rows: 25px auto auto 1fr;
+    grid-template-columns: 1fr 25px;
+    grid-gap: 10px;
+    -webkit-box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.35);
+    box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.35);
+  }
+  .modal #close {
+    width: 25px;
+    height: auto;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .modal #close:hover {
+    transform: rotate(45deg);
+  }
+  .modal #img {
+    width: 100%;
+    max-height: 550px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .modal h1 {
+    font-family: tahoma;
+    font-size: 17px;
+    text-align: center;
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+  .modal p {
+    font-family: tahoma;
+    font-size: 15px;
+    text-align: center;
+    grid-row: 4/5;
+    grid-column: 1/3;
+  }
 }
 
 /*# sourceMappingURL=main--page.css.map */
