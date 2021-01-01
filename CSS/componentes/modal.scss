@@ -14,7 +14,7 @@
 	position: fixed;
 	overflow-y: scroll;
 	left: 30%;
-	top: 4%;
+	top: calc(100vh - 75vh);
 	right: 30%;
 	bottom: 30%;
 	max-width: 40%;
@@ -66,7 +66,7 @@
 		z-index: 2; 
 		position: fixed;
 		left: 24%;
-		top: 26%;
+		top: calc(100vh - 75vh);
 		// right: 15%;
 		/* bottom: 31%; */
 		width: 90%;
@@ -123,10 +123,24 @@
 		top: 20%;
 	}	
 }
-@media screen and (max-width: 900px) and (min-width: 751px) {
+@media screen and (min-width: 751px) {
 	.modal {
-		max-height: 70vh;
+		max-height: 60vh;
 		position: fixed;
-		top: 13%;
+		top: calc(100vh - 75vh);
 	}	
+}
+@media screen and (min-height: 700px)  {
+	.modal {
+		max-height: 50vh;
+		position: fixed;
+		top: calc(100vh - 75vh);
+	}
+}
+@media screen and (min-width: 320px)  {
+	.modal {
+		max-height: 50vh;
+		position: fixed;
+		top: calc(100vh - 75vh);
+	}
 }
